@@ -1,0 +1,31 @@
+beneficiary_id,name,age,gender,location,program_type,monthly_income,household_size,disability_status,orphan_vulnerable_status,health_risk_level,education_status,employment_status,vulnerability_level,urgency_level,previous_support,estimated_need,expected_impact
+B001,Aisha Abdullahi,28,Female,Kano,Livelihood,15000,5,No,No,Medium,Completed secondary,Unemployed,High,High,No,50000,High
+B002,Maryam Sani,34,Female,Kaduna,Health,20000,4,No,No,High,Completed primary,Informal worker,Medium,High,No,30000,Medium
+B003,Zainab Musa,19,Female,Abuja,Education,10000,6,No,Yes,Low,Out of school,Unemployed,High,Medium,Yes,40000,High
+B004,Ibrahim Bello,42,Male,Sokoto,Emergency Welfare,12000,8,Yes,No,High,Completed primary,Unemployed,High,High,No,60000,Medium
+B005,Hauwa Garba,31,Female,Katsina,Livelihood,18000,7,No,No,Medium,Completed secondary,Informal worker,High,Medium,No,45000,High
+B006,Chinedu Okafor,38,Male,Enugu,Health,45000,3,No,No,Medium,Completed tertiary,Employed,Medium,Medium,Yes,35000,Medium
+B007,Blessing Eze,24,Female,Lagos,Education,25000,4,No,No,Low,In school,Part-time,Medium,Low,No,25000,High
+B008,Yusuf Ali,16,Male,Borno,Education,5000,9,No,Yes,Medium,Out of school,Unemployed,High,High,No,55000,High
+B009,Fatima Umar,45,Female,Yobe,Emergency Welfare,8000,6,No,No,High,No formal education,Unemployed,High,High,Yes,40000,Medium
+B010,Samuel Adeyemi,29,Male,Oyo,Livelihood,32000,3,No,No,Low,Completed secondary,Informal worker,Medium,Medium,No,35000,High
+B011,Grace John,52,Female,Plateau,Health,14000,5,Yes,No,High,Completed primary,Unemployed,High,High,No,70000,High
+B012,Mohammed Lawal,33,Male,Niger,Livelihood,22000,6,No,No,Low,Completed secondary,Farmer,Medium,Medium,No,50000,Medium
+B013,Esther Nwankwo,21,Female,Imo,Education,18000,4,No,Yes,Low,In school,Unemployed,High,Medium,No,30000,High
+B014,Abubakar Shehu,60,Male,Zamfara,Emergency Welfare,9000,7,Yes,No,High,No formal education,Unemployed,High,High,No,65000,Medium
+B015,Ruth Daniel,27,Female,Rivers,Livelihood,28000,5,No,No,Low,Completed secondary,Informal worker,Medium,Low,No,40000,High
+B016,Halima Ibrahim,36,Female,Jigawa,Health,13000,8,No,No,High,Completed primary,Unemployed,High,High,No,55000,High
+B017,Peter Musa,40,Male,Benue,Livelihood,35000,6,No,No,Medium,Completed secondary,Farmer,Medium,Medium,Yes,60000,Medium
+B018,Hadiza Bala,18,Female,Kebbi,Education,7000,7,No,Yes,Low,Out of school,Unemployed,High,High,No,45000,High
+B019,Janet Akpan,48,Female,Cross River,Health,26000,4,No,No,Medium,Completed secondary,Trader,Medium,Medium,No,35000,Medium
+B020,Suleiman Ahmed,55,Male,Kano,Emergency Welfare,11000,9,No,No,High,No formal education,Unemployed,High,High,No,50000,Low
+B021,Ngozi Uche,30,Female,Anambra,Livelihood,30000,4,No,No,Low,Completed tertiary,Unemployed,Medium,Medium,No,45000,High
+B022,Musa Danladi,12,Male,Kaduna,Education,6000,6,No,Yes,Medium,Out of school,Unemployed,High,High,No,35000,High
+B023,Aminat Yusuf,26,Female,Kwara,Health,21000,5,No,No,High,Completed secondary,Informal worker,Medium,High,No,40000,Medium
+B024,Victoria Edet,37,Female,Akwa Ibom,Livelihood,40000,3,No,No,Low,Completed secondary,Trader,Low,Medium,No,30000,High
+B025,Usman Idris,44,Male,Bauchi,Emergency Welfare,10000,8,Yes,No,Medium,Completed primary,Unemployed,High,Medium,Yes,45000,Medium
+B026,Rashida Kabir,23,Female,Gombe,Education,9000,7,No,Yes,Low,In school,Unemployed,High,Medium,No,30000,High
+B027,Emeka Obi,50,Male,Delta,Health,33000,4,No,No,High,Completed secondary,Informal worker,Medium,High,Yes,50000,Medium
+B028,Peace Monday,32,Female,Edo,Livelihood,17000,5,No,No,Medium,Completed primary,Unemployed,High,Medium,No,55000,High
+B029,Garba Nuhu,58,Male,Taraba,Emergency Welfare,12000,6,No,No,High,No formal education,Farmer,High,High,No,40000,Medium
+B030,Amara Ike,20,Female,Abia,Education,16000,4,No,No,Low,In school,Part-time,Medium,Medium,No,25000,High
