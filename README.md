@@ -1,3 +1,4 @@
+<img width="1470" height="756" alt="Screenshot 2026-05-02 at 13 28 06" src="https://github.com/user-attachments/assets/6698c350-f631-47d7-99ba-c52426fbb73d" />
 # REI Resource Allocation Optimizer
 
 Resource Allocation Optimization Model is a data-driven NGO decision support system designed to help nonprofit organizations allocate limited resources fairly and effectively. The system analyzes beneficiary vulnerability, urgency, previous support, estimated need, and expected impact to calculate priority scores and recommend resource distribution.
