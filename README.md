@@ -1,103 +1,159 @@
 <img width="1470" height="756" alt="Screenshot 2026-05-02 at 13 28 06" src="https://github.com/user-attachments/assets/6698c350-f631-47d7-99ba-c52426fbb73d" />
-# REI Resource Allocation Optimizer
 
-Resource Allocation Optimization Model is a data-driven NGO decision support system designed to help nonprofit organizations allocate limited resources fairly and effectively. The system analyzes beneficiary vulnerability, urgency, previous support, estimated need, and expected impact to calculate priority scores and recommend resource distribution.
 
-This project demonstrates how data science and AI-inspired decision logic can support transparent, accountable, and impact-driven humanitarian resource allocation.
+#  Resource Allocation Optimization Model
 
-## Features
+##  Overview
 
-- Upload a beneficiary CSV or use included sample data.
-- Enter an available budget for the allocation cycle.
-- Calculate an explainable 0-100 priority score for each beneficiary.
-- Recommend full support, partial support, or waitlist status.
-- Compare priority-first allocation against a balanced-by-program allocation method.
-- View dashboard charts for program allocation, priority levels, gender mix, status distribution, location gaps, and budget gap.
-- Download selected beneficiaries, waitlisted beneficiaries, program summaries, and full allocation results as CSV files.
+This project is a data-driven decision support system designed to help NGOs allocate limited resources **fairly, efficiently, and transparently**.
+
+It uses a scoring-based approach to prioritize beneficiaries based on vulnerability, urgency, and expected impact.
+
+---
+
+## ❗ Problem
+
+NGOs often face difficult questions:
+
+- Who should receive support first?
+- How do we ensure fairness?
+- How do we justify allocation decisions to donors?
+- How do we balance impact vs coverage?
+
+Most decisions are:
+- Manual
+- Subjective
+- Difficult to explain
+
+---
+
+##  Solution
+
+This system introduces a **priority scoring model** that:
+
+- Quantifies beneficiary needs
+- Ranks individuals based on urgency and impact
+- Allocates resources based on available budget
+- Provides explainable results for transparency
+
+---
+
+##  Features
+
+- 📁 Upload beneficiary dataset (CSV)
+- 💰 Input available budget
+- 🧠 0–100 priority scoring system
+- 🎯 Priority-first allocation strategy
+- ⚖️ Balanced-by-program allocation strategy
+- 📊 Interactive dashboard (charts & insights)
+- 📥 Downloadable CSV reports
+- 📌 Status classification:
+  - Fully Supported
+  - Partially Supported
+  - Waitlisted
+
+---
+
+##  Tech Stack
+
+- Python  
+- Pandas  
+- Streamlit  
+- Matplotlib  
+
+---
+
+## Live Demo:
+https://ngo-resource-allocation-optimizer-hbxklg6u7v9gp4uktxxwyt.streamlit.app/
+
+---
 
 ## Scoring Logic
 
-The model calculates component scores for:
+Each beneficiary is assigned a priority score (0–100) based on:
 
-- Vulnerability level
-- Urgency level
-- Expected impact
-- Previous support history
-- Monthly income pressure
-- Household size pressure
-- Disability status, orphan or vulnerable status, and health risk
+Vulnerability level
+Urgency of need
+Previous support received
+Estimated cost of support
+Expected impact
 
-The raw score is normalized to a 0-100 priority score:
+---
 
-| Score Range | Priority Category |
-| --- | --- |
-| 80 and above | Very High Priority |
-| 60 to 79 | High Priority |
-| 40 to 59 | Medium Priority |
-| Below 40 | Low Priority |
+## Example Formula (Simplified):
 
-## Allocation Logic
+Priority Score = 
+(0.30 × Vulnerability) +
+(0.25 × Urgency) +
+(0.20 × Impact) -
+(0.15 × Previous Support) +
+(0.10 × Cost Efficiency)
 
-The app supports two allocation methods:
+👉 This ensures decisions are data-driven and explainable
 
-- **Priority first:** Sorts all eligible beneficiaries by priority score and allocates support until the budget is exhausted.
-- **Balanced by program:** Reserves a share of the budget for each program based on weighted demand, then allocates within each program by priority.
+---
 
-If the remaining budget cannot fully cover the next beneficiary but can meet the minimum partial-support threshold, the app recommends partial support.
+## Allocation Strategies
 
-## Required CSV Columns
+1. Priority-First Allocation
+Funds highest-priority beneficiaries first
+Maximizes impact
 
-```csv
-beneficiary_id,name,age,gender,location,program_type,monthly_income,household_size,vulnerability_level,urgency_level,previous_support,estimated_need,expected_impact
-```
+3. Balanced Allocation
+Distributes resources across programs
+Ensures fairness across categories
 
-Optional columns are also supported:
+---
 
-```csv
-disability_status,orphan_vulnerable_status,health_risk_level,education_status,employment_status
-```
+## Real-World Impact
 
-## Project Structure
+This system can be used by:
 
-```text
-resource-allocation-optimization-model/
-├── app.py
-├── requirements.txt
-├── README.md
-├── sample_data.csv
-├── data/
-│   └── sample_beneficiaries.csv
-├── utils/
-│   ├── allocation_utils.py
-│   ├── chart_utils.py
-│   ├── report_utils.py
-│   └── scoring_utils.py
-├── reports/
-└── assets/
-```
+NGOs for fair resource distribution
+Humanitarian organizations
+Social welfare programs
+Public health outreach initiatives
 
-## Run Locally
+It helps improve:
 
-```bash
-python3 -m pip install -r requirements.txt
-streamlit run app.py
-```
+Transparency
+Accountability
+Donor confidence
+Impact efficiency
 
-Then open the local URL shown by Streamlit.
-
-## Deployment
-
-This app is ready for Streamlit Cloud:
-
-1. Push the project to GitHub.
-2. Create a new Streamlit Cloud app from the repository.
-3. Set `app.py` as the entry file.
-4. Deploy.
+---
 
 ## Future Improvements
 
-- PDF allocation report generation.
-- Donor-specific allocation rules.
-- Linear programming optimization with SciPy.
-- Fairness constraints by gender, community, or program type.
-- Impact forecasting and post-support outcome tracking.
+AI-based predictive allocation
+Multi-cycle allocation tracking
+Integration with NGO databases
+Web-based multi-user system
+
+---
+
+##  Decision Intelligence Approach
+
+This system applies rule-based and data-driven logic to simulate real-world NGO decision-making.
+
+Instead of relying on intuition alone, it introduces:
+- Structured prioritization
+- Quantifiable fairness
+- Explainable allocation logic
+
+This bridges the gap between **data science and social impact strategy**.
+
+---
+
+## 👩🏽‍💻 Author
+
+Rofiyat Aliyu
+AI & Data for Social Impact
+
+---
+
+##  How to Run
+
+```bash
+pip install -r requirements.txt
+streamlit run app.py
